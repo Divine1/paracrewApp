@@ -1,0 +1,18 @@
+{
+    "home" : {
+        "title" : "Home",
+        "welcome_text" : "Make people fall"
+    },
+    "support":{
+        "title" : "Support"
+    },
+    "volunteer":{
+        "title" : "Volunteer"
+    },
+    "vehicle":{
+        "title" : "Vehicle"
+    },
+    "media":{
+        "title" : "Media"
+    }
+}

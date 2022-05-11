@@ -25,3 +25,10 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+
+@ngx-translate/core
+@ngx-translate/http-loader
+https://stackoverflow.com/questions/71112560/can-not-start-angular-website-after-ngx-translate-installation
+

@@ -1,0 +1,9 @@
+{
+    "home" : {
+        "title" : "Domashnya storinka",
+        "welcome_text" : "Make people fall"
+    },
+    "support":{
+        "title" : "Pidtrymka"
+    }
+}

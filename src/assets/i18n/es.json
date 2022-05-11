@@ -1,0 +1,12 @@
+{
+    "home" : {
+        "title" : "Inicio",
+        "welcome_text" : "Make people fall"
+    },
+    "support":{
+        "title" : "Donaciones"
+    },
+    "vehicle":{
+        "title" : "Furgoneta"
+    }
+}

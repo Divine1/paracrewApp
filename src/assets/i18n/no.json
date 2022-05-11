@@ -1,0 +1,12 @@
+{
+    "home" : {
+        "title" : "Hjem",
+        "welcome_text" : "Make people fall"
+    },
+    "support":{
+        "title" : "Støtte"
+    },
+    "vehicle":{
+        "title" : "Varebil"
+    }
+}

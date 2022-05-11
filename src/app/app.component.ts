@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TranslateConfigService } from './services/translate-config.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'paracrewApp';
+
+  constructor(private translateConfigService : TranslateConfigService) { }
+  changeLanguage(type: string){
+    this.translateConfigService.changeLanguage(type);
+  }
 }
