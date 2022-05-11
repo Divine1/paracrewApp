@@ -7,6 +7,9 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { HomeComponent } from './pages/home/home.component';
 import { SupportComponent } from './pages/support/support.component';
+import { HeaderComponent } from './pages/header/header.component';
+import { FooterComponent } from './pages/footer/footer.component';
+import { ElementSliderComponent } from './pages/element-slider/element-slider.component';
 
 
 function rootLoaderFactory(http:HttpClient){
@@ -17,7 +20,10 @@ function rootLoaderFactory(http:HttpClient){
   declarations: [
     AppComponent,
     HomeComponent,
-    SupportComponent
+    SupportComponent,
+    HeaderComponent,
+    FooterComponent,
+    ElementSliderComponent
   ],
   imports: [
     HttpClientModule,
