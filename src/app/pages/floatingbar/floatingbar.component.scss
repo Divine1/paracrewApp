@@ -1,0 +1,51 @@
+:host{
+     position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: rgb(238, 230, 230);
+    opacity: 0.6;
+    font-size: 0.9rem;
+    
+    width: 7.5rem;
+    height: 4rem;
+    border-radius: 4.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+    margin-bottom: 3.5rem;
+    border: 1px solid black;
+    cursor: pointer;
+    div{
+        // color: blue; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        img{
+            width: 2rem;
+            margin-right: 0.5rem;
+            animation: bounce 2s infinite;
+        }
+    }
+    z-index: 1040;
+    
+}
+
+@keyframes bounce {
+    0%{
+        transform: scale(0.7) rotateZ(0deg);
+    }
+    30%{
+        transform: scale(1) rotateZ(20deg);
+    }
+    50%{
+        
+    }
+    70%{
+        transform: scale(1) rotateZ(-20deg);
+    }
+    100%{
+        transform: scale(0.7) rotateZ(0deg);
+    }
+}

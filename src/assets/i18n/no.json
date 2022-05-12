@@ -8,5 +8,19 @@
     },
     "vehicle":{
         "title" : "Varebil"
+    },
+    "gofundme" : {
+        "title" : "donere"
+    },
+    "newsletter":{
+        "title" : "nyhetsbrev",
+        "description" : "For å få nyhetsbrevet med oppdateringer om vår virksomhet rundt om i verden, vennligst registrer e-postadressen din",
+        "register": "Registrere"
+    },
+    "bankingdetails":{
+        "title" : "Bankdetaljer"
+    },
+    "about":{
+        "title"  : "Om"
     }
 }

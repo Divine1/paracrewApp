@@ -13,6 +13,7 @@ export class ElementSliderComponent implements OnInit {
     "assets/images/volunteer1.jpeg",
     "assets/images/volunteer2.jpeg",
     "assets/images/volunteer3.jpeg",
+    "assets/images/volunteer4_large.jpeg",
     "assets/images/reliefcamp.png",
     "assets/images/reliefcampfood.png",
     "assets/images/volunteer1.jpeg",

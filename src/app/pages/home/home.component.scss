@@ -1,0 +1,31 @@
+
+
+ .othercontacts{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    img{
+        height: auto;
+        width: 9rem;
+        margin-right: 1rem;
+    }
+}
+.donate{
+    margin: 4rem 0;
+    text-align: center;
+    
+    
+    img{
+        height: 15rem;    
+    }
+}
+
+@media screen and (max-width: 900px) {
+    
+        .donate{
+            img{
+                height: 10rem;    
+            }
+        }
+    }

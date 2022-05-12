@@ -1,3 +1,15 @@
-<div class="logo">
-    <img src="assets/images/banner.png" alt=""  />
+<div class="headercomponent"> 
+    <div class="logo">
+        <img src="assets/images/banner.png" alt=""  />
+    </div>
+    <div class="locales">
+        <!-- <div (click)="changeLanguage('en')">English</div>
+        <div (click)="changeLanguage('es')">Spanish</div>
+        <div (click)="changeLanguage('no')">Norway</div>
+        <div (click)="changeLanguage('ua')">Ukraine</div> -->
+      <button nbButton *ngFor="let item of languages" [status]="item.style"
+      (click)="changeLanguage(item.code)"
+      >{{item.title}}</button>
+      
+    </div>
 </div>

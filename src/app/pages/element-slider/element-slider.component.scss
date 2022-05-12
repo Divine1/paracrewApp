@@ -1,8 +1,8 @@
 
-$item-container-height: 35vh;
+$item-container-height: 40vh;
 $item-container-width: 80vw;
-$item-width: 30vw;
-$item-count: 5;
+$item-width: 35vw;
+$item-count: 6;
 .mcontainer{
   display: flex;
   justify-content: center;
@@ -52,9 +52,10 @@ $item-count: 5;
         font-size: 5rem;
         white-space: nowrap;
         img{
-          height: 100%;
+          height: auto;
           width: 100%;
           padding: 0.5rem;
+          
         }
         &:not(:last-child){
           //margin-right: 1rem;

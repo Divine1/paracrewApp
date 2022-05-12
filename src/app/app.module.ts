@@ -10,6 +10,19 @@ import { SupportComponent } from './pages/support/support.component';
 import { HeaderComponent } from './pages/header/header.component';
 import { FooterComponent } from './pages/footer/footer.component';
 import { ElementSliderComponent } from './pages/element-slider/element-slider.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NbThemeModule, NbLayoutModule, NbButtonModule, NbCardModule, NbBadgeModule, NbIconModule, NbInputModule, NbFormFieldModule } from '@nebular/theme';
+import { NbEvaIconsModule } from '@nebular/eva-icons';
+import { FloatingbarComponent } from './pages/floatingbar/floatingbar.component';
+import { NZ_I18N } from 'ng-zorro-antd/i18n';
+import { en_US } from 'ng-zorro-antd/i18n';
+import { registerLocaleData } from '@angular/common';
+import en from '@angular/common/locales/en';
+import { FormsModule } from '@angular/forms';
+import { CarousalComponent } from './pages/carousal/carousal.component';
+import { NzCarouselModule } from 'ng-zorro-antd/carousel';
+
+registerLocaleData(en);
 
 
 function rootLoaderFactory(http:HttpClient){
@@ -23,7 +36,9 @@ function rootLoaderFactory(http:HttpClient){
     SupportComponent,
     HeaderComponent,
     FooterComponent,
-    ElementSliderComponent
+    ElementSliderComponent,
+    FloatingbarComponent,
+    CarousalComponent
   ],
   imports: [
     HttpClientModule,
@@ -36,9 +51,20 @@ function rootLoaderFactory(http:HttpClient){
         deps: [HttpClient]
       }
     }),
-    
+    BrowserAnimationsModule,
+    NbThemeModule.forRoot({ name: 'default' }),
+    NbLayoutModule,
+    NbEvaIconsModule,
+    NbButtonModule,
+    NbCardModule,
+    NbEvaIconsModule,
+    NbIconModule,
+    NbInputModule,
+    NbFormFieldModule,
+    NzCarouselModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [{ provide: NZ_I18N, useValue: en_US }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

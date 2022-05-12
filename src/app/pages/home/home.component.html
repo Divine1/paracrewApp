@@ -1,2 +1,16 @@
-<p>home works!</p>
-<h1 translate>home.title</h1>
+<!-- <p>home works!</p> -->
+<!-- <h1 translate>home.title</h1>
+<button (click)="clickDonate()" translate>gofundme.title</button> -->
+
+<app-element-slider></app-element-slider>
+<div class="othercontacts">
+    <div *ngFor="let item of otherContacts">
+        <img [src]="item" alt="image not found" />
+    </div>
+</div>
+
+<div class="donate">
+    <img src="assets/images/Donation_button.jpeg" alt="">
+</div>
+<!-- 
+<app-carousal></app-carousal> -->

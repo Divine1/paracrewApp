@@ -1,15 +1,19 @@
-paracrew
-<app-header></app-header>
 
-
-<button (click)="changeLanguage('en')">en</button> <br />
-<button (click)="changeLanguage('es')">es</button> <br />
-<button (click)="changeLanguage('no')">no</button> <br />
-<button (click)="changeLanguage('ua')">ua</button> <br />
-
-<app-home></app-home>
-
-<app-element-slider></app-element-slider>
-
-<app-footer></app-footer>
-<router-outlet></router-outlet>
+  <nb-layout>
+    <nb-layout-header fixed>
+      <app-header></app-header>
+    </nb-layout-header>
+    <nb-layout-column>
+      <br />
+      <br />
+      <br />
+      <app-home></app-home>
+    </nb-layout-column>
+    <nb-layout-footer>
+      <app-footer></app-footer>
+  <app-floatingbar></app-floatingbar>
+  
+    </nb-layout-footer>
+    
+    
+   </nb-layout>

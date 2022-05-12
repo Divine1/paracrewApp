@@ -1,8 +1,29 @@
-.logo{
-    img{
-        min-width: 15rem;
-        max-width: 25rem;
-        width: 40%;
-        height: auto;
+:host{
+
+    position: relative;
+    width: 100%;
+    .headercomponent{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .logo{
+            display: flex;
+            justify-content: center;
+            width: 18rem;
+            img{
+                width: inherit;
+            }
+        }
+    
+        .locales{
+            justify-content: center;
+            display: flex;
+            button{
+                margin-right: 0.5rem;
+                margin-top: 0.3rem;
+            }
+        }
     }
+    
 }

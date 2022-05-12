@@ -32,3 +32,8 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 @ngx-translate/http-loader
 https://stackoverflow.com/questions/71112560/can-not-start-angular-website-after-ngx-translate-installation
 
+
+https://akveo.github.io/nebular/docs/guides/install-nebular#manually
+
+https://ng.ant.design/docs/getting-started/en
+

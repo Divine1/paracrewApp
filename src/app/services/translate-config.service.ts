@@ -13,4 +13,8 @@ export class TranslateConfigService {
    changeLanguage(type: string){
      this.translateService.use(type);
    }
+
+   getLanguage(){
+     
+   }
 }

@@ -1,52 +1,71 @@
 <div class="footercontainer">
 
-    <div class="othercontacts">
-        <div *ngFor="let item of otherContacts">
-            <img [src]="item" alt="image not found" />
-        </div>
-    </div>
     
-    <div class="donate">
-        <img src="assets/images/Donation_button.jpeg" alt="">
-    </div>
 
     <div class="about">
 
-        <div class="aboutinfo">
-            <div class="about-title">About</div>
-            <div>
-                PARACREW is a non-profit international organization registered in Norway.
-            </div>
-            <div>
-                Reg.Nr. 929 068 785 
-            </div>
-            <div>
-                P.O. Box 52, 2024 Gjerdrum, Norway
-            </div>
-            <div>
-                post@paracrew.org
-            </div>
-        </div>
-        <div class="aboutbankdetails">
-            <div class="about-title">Banking details:</div>
-            <div>Account owner: Paracrew</div>
-            <div>Bank account: 1506.78.01455</div>
-            <div>IBAN: NO2215067801455</div>
-            <div>BIC: DNBANOKKXXX</div>
-        </div>
+   
 
-        <div class="newsletter">
-            <div class="about-title">Newsletter</div>
-            <label for="newsletter">
-                To get the newsletter with updates about our operations around the world, please register your email address
-            </label>
-            <input type="text" name="newsletter" id="newsletter" />
-        </div>
-        
+        <nb-card class="aboutinfo">
+            <nb-card-header translate>about.title</nb-card-header>
+            <nb-card-body>
+                <div><nb-icon icon="info-outline"></nb-icon>
+                    PARACREW is a non-profit international organization registered in Norway.
+                </div>
+                <div>
+                    <nb-icon icon="alert-circle-outline"></nb-icon>
+                    Reg.Nr. 929 068 785 
+                </div>
+                <div>
+                    <nb-icon icon="home-outline"></nb-icon>
+                    P.O. Box 52, 2024 Gjerdrum, Norway
+                </div>
+                <div><nb-icon icon="email-outline"></nb-icon>
+
+                    post@paracrew.org
+                </div>
+            </nb-card-body>
+            
+          </nb-card>
+
+          <nb-card class="aboutbankdetails">
+            <nb-card-header translate>bankingdetails.title</nb-card-header>
+            <nb-card-body>
+                <div>
+                    <nb-icon icon="person-outline"></nb-icon>
+                    Account owner: Paracrew</div>
+                <div>
+                    <nb-icon icon="alert-circle-outline"></nb-icon>
+                    Bank account: 1506.78.01455</div>
+                <div>
+                    <nb-icon icon="alert-circle-outline"></nb-icon>
+                    IBAN: NO2215067801455</div>
+                <div>
+                    <nb-icon icon="alert-circle-outline"></nb-icon>
+                    BIC: DNBANOKKXXX</div>
+            </nb-card-body>
+            
+          </nb-card>
+
+          <nb-card class="newsletter">
+            <nb-card-header translate>newsletter.title</nb-card-header>
+            <nb-card-body>
+                <label for="newsletter" translate>newsletter.description</label>
+              
+                      <nb-form-field>
+                        <nb-icon nbPrefix icon="at-outline" pack="eva"></nb-icon>
+                        <input type="text" nbInput>
+                      </nb-form-field>
+                      <button nbButton outline status="info" translate>newsletter.register</button>
+
+            </nb-card-body>
+            
+          </nb-card>
+
     </div>
-    <div class="bannerfooter">
+    <!-- <div class="bannerfooter">
         <img src="assets/images/footer/banner-footer.png" alt="">
-    </div>
+    </div> -->
     <div class="copyright">
         <!-- Copyright &copy; 2022 All Rights Reserved | Norwegian crisis response crew | <a href="">paracrew.org</a>   -->
         Copyright &copy; 2022 All Rights Reserved | <a href="">paracrew.org</a>  

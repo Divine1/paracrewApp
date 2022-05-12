@@ -14,5 +14,19 @@
     },
     "media":{
         "title" : "Media"
+    },
+    "gofundme" : {
+        "title" : "Donate"
+    },
+    "newsletter":{
+        "title" : "Newsletter",
+        "description" : "To get the newsletter with updates about our operations around the world, please register your email address",
+        "register": "Register"
+    },
+    "bankingdetails":{
+        "title" : "Banking details"
+    },
+    "about":{
+        "title"  : "About"
     }
 }

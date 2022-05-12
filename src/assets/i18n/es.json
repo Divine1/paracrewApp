@@ -8,5 +8,19 @@
     },
     "vehicle":{
         "title" : "Furgoneta"
+    },
+    "gofundme" : {
+        "title" : "AYUDA!"
+    },
+    "newsletter":{
+        "title": "Boletin informativo",
+        "description" : "Para recibir el boletín con actualizaciones sobre nuestras operaciones en todo el mundo, registre su dirección de correo electrónico",
+        "register": "Registro"
+    },
+    "bankingdetails":{
+        "title" : "Datos bancarios"
+    },
+    "about":{
+        "title"  : "Acerca de"
     }
 }
