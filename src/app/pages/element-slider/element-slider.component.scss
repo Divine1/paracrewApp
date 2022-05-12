@@ -59,7 +59,7 @@ $item-count: 9;
     transform: translateX(0vw);
   }
   100%{
-    transform: translateX(calc(-1 * $item-width * $item-count));
+    transform: translateX(-1 * $item-width * $item-count);
   }
 }
 
