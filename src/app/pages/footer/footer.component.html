@@ -1,1 +1,42 @@
-<p>footer works!</p>
+<div class="footercontainer">
+    <div class="about">
+
+        <div class="aboutinfo">
+            <div>About</div>
+            <div>
+                PARACREW is a non-profit international organization registered in Norway.
+            </div>
+            <div>
+                Reg.Nr. 929 068 785 
+            </div>
+            <div>
+                P.O. Box 52, 2024 Gjerdrum, Norway
+            </div>
+            <div>
+                post@paracrew.org
+            </div>
+        </div>
+        <div class="aboutbankdetails">
+            <div>Banking details:</div>
+            <div>Account owner: Paracrew</div>
+            <div>Bank account: 1506.78.01455</div>
+            <div>IBAN: NO2215067801455</div>
+            <div>BIC: DNBANOKKXXX</div>
+        </div>
+
+
+        <div class="othercontacts">
+            <div *ngFor="let item of otherContacts">
+                <img [src]="item" alt="image not found" />
+            </div>
+        </div>
+        
+    </div>
+    <div class="bannerfooter">
+        <img src="assets/images/footer/banner-footer.png" alt="">
+    </div>
+    <div class="copyright">
+        <!-- Copyright &copy; 2022 All Rights Reserved | Norwegian crisis response crew | <a href="">paracrew.org</a>   -->
+        Copyright &copy; 2022 All Rights Reserved | <a href="">paracrew.org</a>  
+    </div>
+</div>
