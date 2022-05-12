@@ -1,20 +1,21 @@
 
-$item-container-height: 20vh;
+$item-container-height: 35vh;
 $item-container-width: 80vw;
-$item-width: 20vw;
-$item-count: 9;
+$item-width: 30vw;
+$item-count: 5;
 .mcontainer{
   display: flex;
   justify-content: center;
   align-items: center;
   .marquee{
-    background-color: #111;
+    //background-color: #111;
+    //background-color: blue;
     color: grey;
     width: $item-container-width;
     height: $item-container-height;
     overflow: hidden;
     position: relative;
-
+/*
     &::before,&::after{
       position: absolute;
       top: 0;
@@ -31,6 +32,7 @@ $item-count: 9;
       right:0;
       background: linear-gradient(to left,rgb(61, 60, 60) 0%,transparent 100%);
     }
+    */
     .marquee-content{
       list-style: none;
       height: 100%;
@@ -49,6 +51,15 @@ $item-count: 9;
         align-items: center;
         font-size: 5rem;
         white-space: nowrap;
+        img{
+          height: 100%;
+          width: 100%;
+          padding: 0.5rem;
+        }
+        &:not(:last-child){
+          //margin-right: 1rem;
+          //margin-right: 0.4vw;
+        }
       }
 
     }
@@ -59,7 +70,7 @@ $item-count: 9;
     transform: translateX(0vw);
   }
   100%{
-    transform: translateX(-1 * $item-width * $item-count);
+    transform: translateX(-1 * $item-width * $item-count  );
   }
 }
 

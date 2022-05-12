@@ -3,11 +3,11 @@
 <div class="mcontainer">
 <div class="marquee">
   <ul class="marquee-content">
-        <!-- <img src="assets/images/reliefcamp.png" />
-        <img src="assets/images/reliefcampfood.png" />
-        <img src="assets/images/volunteer1.jpeg" />
-        <img src="assets/images/volunteer2.jpeg" /> -->
-    <li>1</li>
+    <li *ngFor="let image of sliderImages;">
+        <img [src]="image" />
+      </li>
+        
+    <!-- <li>1</li>
     <li>2</li>
     <li>3</li>
     <li>4</li>
@@ -20,7 +20,7 @@
     <li class="highlight">1</li>
     <li  class="highlight">2</li>
     <li class="highlight">3</li>
-    <li class="highlight">4</li>
+    <li class="highlight">4</li> -->
 
   </ul>
 </div>

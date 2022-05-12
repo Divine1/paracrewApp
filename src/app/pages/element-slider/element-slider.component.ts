@@ -7,6 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ElementSliderComponent implements OnInit {
 
+  sliderImages:string[]=[
+    "assets/images/reliefcamp.png",
+    "assets/images/reliefcampfood.png",
+    "assets/images/volunteer1.jpeg",
+    "assets/images/volunteer2.jpeg",
+    "assets/images/volunteer3.jpeg",
+    "assets/images/reliefcamp.png",
+    "assets/images/reliefcampfood.png",
+    "assets/images/volunteer1.jpeg",
+    "assets/images/volunteer2.jpeg",
+  ]
   constructor() { }
 
   ngOnInit(): void {
