@@ -1,32 +1,44 @@
 .footercontainer{
     
-    //background-color: yellowgreen;
+    .othercontacts{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        img{
+            height: auto;
+            width: 9rem;
+            margin-right: 1rem;
+        }
+    }
     .about{
-        min-height: 20rem;
+        margin: 2rem 0;
+        //min-height: 15rem;
         padding: 1rem;
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
         .aboutinfo{
             margin-bottom: 2rem;
-            width: 34%;
-            min-width: 25rem;
+            width: 30%;
+            //min-width: 10rem;
             margin-right: 2rem;
+            min-width: 20rem;
         }
         .aboutbankdetails{
             width: 20%;
-            // min-width: 15rem;
+            min-width: 20rem;
             margin-bottom: 2rem;
         }
-        .othercontacts{
-            display: flex;
-            justify-content: space-evenly;
-            flex-wrap: wrap;
-            width: 40%;
-            img{
-                height: auto;
-                width: 9rem;
-                margin-right: 1rem;
-            }
+        .newsletter{
+            width: 30%;
+            min-width: 20rem;
+            
+        }
+        .about-title{
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+
         }
     }
     .bannerfooter{
@@ -37,7 +49,6 @@
         }
     }
     .copyright{
-        //background-color: yellow;
         padding: 1rem;
         text-align: center;
     }
@@ -51,22 +62,18 @@
             }
             .aboutbankdetails{
                 width: auto;
-                margin-bottom: 2rem;
-            }
-            .othercontacts{
-                width: auto;
-                img{
-
-                }
             }
         }
     }
   }
 
-  @media screen and (max-width: 805px) {
+  @media screen and (max-width: 900px) {
     .footercontainer{
         .about{
-            //justify-content: center;
+            justify-content: unset; 
+            .aboutinfo{
+               
+            }
         }
     }
   }

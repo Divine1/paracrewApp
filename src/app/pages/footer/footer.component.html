@@ -1,8 +1,16 @@
 <div class="footercontainer">
+
+    <div class="othercontacts">
+        <div *ngFor="let item of otherContacts">
+            <img [src]="item" alt="image not found" />
+        </div>
+    </div>
+    
+
     <div class="about">
 
         <div class="aboutinfo">
-            <div>About</div>
+            <div class="about-title">About</div>
             <div>
                 PARACREW is a non-profit international organization registered in Norway.
             </div>
@@ -17,18 +25,19 @@
             </div>
         </div>
         <div class="aboutbankdetails">
-            <div>Banking details:</div>
+            <div class="about-title">Banking details:</div>
             <div>Account owner: Paracrew</div>
             <div>Bank account: 1506.78.01455</div>
             <div>IBAN: NO2215067801455</div>
             <div>BIC: DNBANOKKXXX</div>
         </div>
 
-
-        <div class="othercontacts">
-            <div *ngFor="let item of otherContacts">
-                <img [src]="item" alt="image not found" />
-            </div>
+        <div class="newsletter">
+            <div class="about-title">Newsletter</div>
+            <label for="newsletter">
+                To get the newsletter with updates about our operations around the world, please register your email address
+            </label>
+            <input type="text" name="newsletter" id="newsletter" />
         </div>
         
     </div>
