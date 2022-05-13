@@ -1,0 +1,19 @@
+<div class="donationcompanies">
+    <div *ngFor="let item of donatationCompanies">
+        <a [href]="item.url" target="_blank" *ngIf="item.type == 'link'">
+            <img [src]="item.image" alt="" [class]="item.classname" />
+        </a>
+
+        <div *ngIf="item.type == 'popup'" (click)="showModal(item)">
+            <img [src]="item.image" alt="" [class]="item.classname" />
+        </div>
+    </div>
+</div>
+
+<nz-modal [(nzVisible)]="isVisible" nzTitle="Close"  (nzOnOk)="handleClose()">
+    <ng-container *nzModalContent>
+      <p>Content one</p>
+      <p>Content two</p>
+      <p>Content three</p>
+    </ng-container>
+  </nz-modal>

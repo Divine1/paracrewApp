@@ -1,0 +1,24 @@
+:host{
+    .donationcompanies{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        >div{
+            margin: 1.5rem;
+            img{
+                height: 7rem;
+                width: auto;
+            }
+            .gofundme{
+                height: 12rem;
+            }
+            .VIPPS{
+                height: 15rem;
+            }
+            .paypal{
+                height: 5rem;
+            }
+        }
+    }
+}

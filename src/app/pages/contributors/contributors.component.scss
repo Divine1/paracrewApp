@@ -1,0 +1,29 @@
+:host{
+    width: inherit;
+
+    .contributerprofile{
+        display: flex;
+        // background-color: rgb(231, 224, 224);
+        width: inherit;
+        padding: 1rem;
+        margin: 0.5rem;
+        .profilepic{
+            img{
+                height: 5rem;
+                border-radius: 3rem;
+            }
+        }
+        .profiledesc{
+            margin-left: 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .cname{
+
+            }
+            .jobtitle{
+
+            }
+        }
+    }
+}

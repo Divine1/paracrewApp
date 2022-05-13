@@ -1,0 +1,15 @@
+<div class="contributerprofile">
+  <div class="profilepic">
+    <img [src]="contributor.profilepic" alt="image not found">
+  </div>
+  <div class="profiledesc">
+    <div class="cname">{{contributor.name}}
+    </div>
+    <div class="jobtitle">{{contributor.jobtitle}}</div>
+    <div class="description">{{contributor.description}}</div>
+    <div>
+      <nb-icon icon="email-outline" [nbTooltip]="contributor.email"  ></nb-icon>
+
+    </div>
+  </div>
+</div>

@@ -1,0 +1,10 @@
+<div class="mcontainer">
+    <div class="marquee">
+      <ul class="marquee-content">
+        <li *ngFor="let contributor of contributors;">
+            
+            <app-contributors [contributor]="contributor"></app-contributors>
+        </li>
+      </ul>
+    </div>
+</div>

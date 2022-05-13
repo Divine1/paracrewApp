@@ -1,0 +1,45 @@
+
+$item-container-height: 0vh;
+$item-container-width: 80vw;
+
+// $item-width: 26.5vw;
+$item-width: 25rem;
+$item-count: 6;
+
+.mcontainer{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    .marquee{
+        color: grey;
+        width: $item-container-width;
+        height: auto;
+        overflow: hidden;
+        position: relative;
+        .marquee-content{
+            list-style: none;
+            display: flex;
+            
+            animation:scrolling 30s linear infinite;
+            &:hover{
+                animation-play-state: paused;
+              }
+            li{
+                width: $item-width;
+                flex-shrink: 0;
+                // background-color: grey;
+            }
+        }
+    }
+}
+
+@keyframes scrolling {
+    0%{
+      transform: translateX(0vw);
+    }
+    100%{
+      transform: translateX(-1 * $item-width * $item-count  );
+    }
+  }
