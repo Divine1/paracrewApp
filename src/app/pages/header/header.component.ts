@@ -16,29 +16,33 @@ export class HeaderComponent implements OnInit {
   languageStatus:string='basic';
 
   languages:ILanguage[]=[
-    {code:"en",title:"English",style:"success"},
-    {code:"es",title:"Spanish",style:"basic"},
-    {code:"no",title:"Norway",style:"basic"},
-    {code:"ua",title:"Ukraine",style:"basic"}
+    {code:"en",title:"English (EN)",style:"success"},
+    {code:"es",title:"Spanish (ES)",style:"basic"},
+    {code:"no",title:"Norway (NO)",style:"basic"},
+    {code:"ua",title:"Ukraine (UA)",style:"basic"}
   ];
+  selectedLanguage = 'en';
+
   ngOnInit(): void {
   }
   constructor(private translateConfigService : TranslateConfigService) { }
   changeLanguage(type: string){
-    this.languages = this.languages.map((item)=>{
-      if(type == item.code){
-        return {
-          ...item,
-          style : "success"
-        }
-      }
-      else{
-        return {
-          ...item,
-          style : "basic"
-        };
-      }
-    });
+    console.log("changeLanguage type ",type)
+    this.selectedLanguage = type;
+    // this.languages = this.languages.map((item)=>{
+    //   if(type == item.code){
+    //     return {
+    //       ...item,
+    //       style : "success"
+    //     }
+    //   }
+    //   else{
+    //     return {
+    //       ...item,
+    //       style : "basic"
+    //     };
+    //   }
+    // });
     this.translateConfigService.changeLanguage(type);
   }
 }

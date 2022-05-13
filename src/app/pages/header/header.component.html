@@ -2,14 +2,32 @@
     <div class="logo">
         <img src="assets/images/banner.png" alt=""  />
     </div>
+    
     <div class="locales">
         <!-- <div (click)="changeLanguage('en')">English</div>
         <div (click)="changeLanguage('es')">Spanish</div>
         <div (click)="changeLanguage('no')">Norway</div>
         <div (click)="changeLanguage('ua')">Ukraine</div> -->
-      <button nbButton *ngFor="let item of languages" [status]="item.style"
+      <!-- <button nbButton *ngFor="let item of languages" [status]="item.style"
       (click)="changeLanguage(item.code)"
-      >{{item.title}}</button>
-      
+      >{{item.title}}</button> -->
+      <div class="pmenu">
+        <div routerLink="" [routerLinkActiveOptions]="{exact: true}" routerLinkActive="menuactive" translate>home.title</div>
+        <div routerLink="donate" [routerLinkActiveOptions]="{exact: true}" routerLinkActive="menuactive" translate>donate.title</div>
+      </div>
+      <div>
+        <!-- <nb-select size="small" placeholder="Select Language" [selected]="selectedLanguage"
+          (selectedChange)="changeLanguage($event)"
+          
+          >
+            <nb-option *ngFor="let item of languages"  [value]="item.code" >{{item.title}}</nb-option>
+            
+          </nb-select> -->
+          <nz-select [ngModel]="selectedLanguage" (ngModelChange)="changeLanguage($event)">
+            <nz-option *ngFor="let item of languages" [nzValue]="item.code" [nzLabel]="item.title"></nz-option>
+            
+            
+          </nz-select>
+        </div>
     </div>
 </div>

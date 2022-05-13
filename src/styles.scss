@@ -25,3 +25,9 @@ body{
 .nb-theme-default nb-layout-header nav {
   height: unset;
 }
+.nb-theme-default nb-layout-header nav{
+  box-shadow:unset;
+}
+.nb-theme-default nb-layout .layout .layout-container .content nb-layout-footer nav{
+  border-top: unset;
+}

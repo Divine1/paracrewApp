@@ -22,5 +22,8 @@
     },
     "about":{
         "title"  : "Om"
+    },
+    "donate" : {
+        "title" : "donere"
     }
 }

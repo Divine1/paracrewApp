@@ -15,15 +15,29 @@
                 width: inherit;
             }
         }
-    
+        .pmenu{
+            display: flex;
+            
+            align-items: center;
+            div{
+                margin: 0 0.5rem;
+                cursor: pointer;
+                
+            }
+        }
         .locales{
             justify-content: center;
             display: flex;
+            
             button{
                 margin-right: 0.5rem;
                 margin-top: 0.3rem;
             }
         }
     }
-    
+    .menuactive{
+        color: lightseagreen;
+
+
+    }    
 }

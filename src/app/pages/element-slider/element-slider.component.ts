@@ -19,6 +19,7 @@ export class ElementSliderComponent implements OnInit {
     "assets/images/volunteer1.jpeg",
     "assets/images/volunteer2.jpeg",
   ]
+
   constructor() { }
 
   ngOnInit(): void {

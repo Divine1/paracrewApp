@@ -11,7 +11,7 @@ import { HeaderComponent } from './pages/header/header.component';
 import { FooterComponent } from './pages/footer/footer.component';
 import { ElementSliderComponent } from './pages/element-slider/element-slider.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NbThemeModule, NbLayoutModule, NbButtonModule, NbCardModule, NbBadgeModule, NbIconModule, NbInputModule, NbFormFieldModule } from '@nebular/theme';
+import { NbThemeModule, NbLayoutModule, NbButtonModule, NbCardModule, NbBadgeModule, NbIconModule, NbInputModule, NbFormFieldModule, NbSelectLabelComponent, NbSelectModule, NbUserModule, NbTooltipModule, NbDialogModule } from '@nebular/theme';
 import { NbEvaIconsModule } from '@nebular/eva-icons';
 import { FloatingbarComponent } from './pages/floatingbar/floatingbar.component';
 import { NZ_I18N } from 'ng-zorro-antd/i18n';
@@ -20,7 +20,12 @@ import { registerLocaleData } from '@angular/common';
 import en from '@angular/common/locales/en';
 import { FormsModule } from '@angular/forms';
 import { CarousalComponent } from './pages/carousal/carousal.component';
-import { NzCarouselModule } from 'ng-zorro-antd/carousel';
+import { NzCarouselModule , } from 'ng-zorro-antd/carousel';
+import { ContributorsComponent } from './pages/contributors/contributors.component';
+import { ContributorsliderComponent } from './pages/contributorslider/contributorslider.component';
+import { DonateComponent } from './pages/donate/donate.component';
+import { NzSelectModule } from 'ng-zorro-antd/select';
+import { NzModalModule } from 'ng-zorro-antd/modal';
 
 registerLocaleData(en);
 
@@ -38,7 +43,10 @@ function rootLoaderFactory(http:HttpClient){
     FooterComponent,
     ElementSliderComponent,
     FloatingbarComponent,
-    CarousalComponent
+    CarousalComponent,
+    ContributorsComponent,
+    ContributorsliderComponent,
+    DonateComponent,
   ],
   imports: [
     HttpClientModule,
@@ -62,7 +70,13 @@ function rootLoaderFactory(http:HttpClient){
     NbInputModule,
     NbFormFieldModule,
     NzCarouselModule,
-    FormsModule
+    NbSelectModule,
+    NbUserModule,
+    FormsModule,
+    NbTooltipModule,
+    NzSelectModule,
+    NbDialogModule,
+    NzModalModule
   ],
   providers: [{ provide: NZ_I18N, useValue: en_US }],
   bootstrap: [AppComponent]

@@ -22,5 +22,8 @@
     },
     "about":{
         "title"  : "Acerca de"
+    },
+    "donate" : {
+        "title" : "donar"
     }
 }

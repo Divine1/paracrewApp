@@ -28,5 +28,8 @@
     },
     "about":{
         "title"  : "About"
+    },
+    "donate" : {
+        "title" : "Donate"
     }
 }

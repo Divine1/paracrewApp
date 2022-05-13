@@ -54,9 +54,9 @@
               
                       <nb-form-field>
                         <nb-icon nbPrefix icon="at-outline" pack="eva"></nb-icon>
-                        <input type="text" nbInput>
+                        <input type="text" shape="round" nbInput placeholder="Email"/>
                       </nb-form-field>
-                      <button nbButton outline status="info" translate>newsletter.register</button>
+                      <button nbButton shape="round" size="small" status="success" translate>newsletter.register</button>
 
             </nb-card-body>
             
@@ -66,6 +66,12 @@
     <!-- <div class="bannerfooter">
         <img src="assets/images/footer/banner-footer.png" alt="">
     </div> -->
+
+    <div class="othercontacts">
+        <div *ngFor="let item of otherContacts">
+            <img [src]="item" alt="image not found" />
+        </div>
+    </div>
     <div class="copyright">
         <!-- Copyright &copy; 2022 All Rights Reserved | Norwegian crisis response crew | <a href="">paracrew.org</a>   -->
         Copyright &copy; 2022 All Rights Reserved | <a href="">paracrew.org</a>  
