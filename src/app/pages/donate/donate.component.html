@@ -1,4 +1,29 @@
+<div style="font-size: 2rem;text-align: center;line-height: 1;" translate>
+    donate.heading1
+</div>
+
+<div style="margin: 0 auto;margin-top:2.5rem;width: 30rem;text-align: center;" translate>
+    donate.description1
+</div>
+
+<div style="display: flex; justify-content: center;margin-top: 1rem;">
+    <app-donationmetrics
+    style="margin-right: 2rem;"
+    [metricslabel]="'4/3'"
+    [metricsdescription]="'Operativ base'"
+    ></app-donationmetrics>
+
+    <app-donationmetrics
+    [metricslabel]="'10'"
+    [metricsdescription]="'Crew members'"
+    ></app-donationmetrics>
+</div>
+
+<div style="font-size: 2rem;text-align: center;margin-top: 4rem;" translate>
+    donate.paymentserviceTitle
+</div>
 <div class="donationcompanies">
+    
     <div *ngFor="let item of donatationCompanies">
         <a [href]="item.url" target="_blank" *ngIf="item.type == 'link'">
             <img [src]="item.image" alt="" [class]="item.classname" />
@@ -10,3 +35,87 @@
     </div>
 </div>
 
+
+<div class="effortsofthecrew">
+
+    <div class="effortleft">
+        <img src="assets/images/donation/rescueteam3.jpeg" alt="">
+    </div>
+    <div class="effortright">
+        <div style="" translate>
+            donate.description2.para1
+            <div style="margin: 1rem 0;">
+                <div style="font-size: 1.1rem;" translate>donate.description2.phase2</div>
+                <div translate>donate.description2.para2</div>
+            </div>
+            <div style="margin: 1rem 0;">
+                <div  style="font-size: 1.1rem;" translate>donate.description2.phase2_1</div>
+                <div translate>donate.description2.para3</div>
+            </div>   
+        </div>
+    </div>
+</div>
+
+<div style="margin: 0 2rem" >
+    <div style="width: auto;text-align: center;object-fit: contain;">
+        <img style="width: 100%;" src="assets/images/donation/rescueteam1.jpeg" alt="">
+    </div>
+    <div style="width: auto;text-align: center;object-fit: contain;">
+        <img style="width: auto;" src="assets/images/donation/rescueteam2.jpeg" alt="">
+    </div>
+</div>
+
+
+<ng-template #dialog let-data let-ref="dialogRef" >
+    <nb-card class="dialogclass">
+      <nb-card-header>
+          <div class="dialogheader">
+            <img [src]="data.image" alt="" class="" />
+          </div>
+          
+      </nb-card-header>
+      <nb-card-body>
+        
+        <div *ngIf="data.classname == 'VIPPS'">
+            <div style="text-align: center;color: #f15d2b;font-size: 1.3rem;">
+                {{data.paymentcode}}
+            </div>
+            <img [src]="data.qrcode" alt="" style="height: 20rem;">
+        </div>  
+
+        <div *ngIf="data.classname == 'paypal'">
+            <div style="text-align: center;color: #f15d2b;font-size: 1rem;margin-bottom: 1rem;">
+                <a style="text-decoration: none;" [href]="data.paymentlink" target="_blank">Pay using paypal website</a>
+            </div>
+            <img [src]="data.qrcode" alt="" style="height: 20rem;">
+        </div>  
+
+        <div *ngIf="data.classname == 'dnb'">
+            
+                <div style="font-weight: bold;font-size: 1.2rem;text-align: center;margin-bottom: 0.6rem;" translate>bankingdetails.title</div>
+                
+                <div>
+                    <nb-icon icon="person-outline"></nb-icon>
+                    Account owner: Paracrew</div>
+                <div>
+                    <nb-icon icon="alert-circle-outline"></nb-icon>
+                    Bank account: 1506.78.01455</div>
+                <div>
+                    <nb-icon icon="alert-circle-outline"></nb-icon>
+                    IBAN: NO2215067801455</div>
+                <div>
+                    <nb-icon icon="alert-circle-outline"></nb-icon>
+                    BIC: DNBANOKKXXX</div>
+            
+        </div>
+
+
+
+      </nb-card-body>
+      <nb-card-footer>
+        <div style="text-align: center;">
+            <button nbButton (click)="ref.close()">Close</button>
+        </div>
+      </nb-card-footer>
+    </nb-card>
+  </ng-template>

@@ -23,7 +23,20 @@
     "about":{
         "title"  : "Om"
     },
+    "ourteam" : {
+        "title" : "Vårt team"
+    },
     "donate" : {
-        "title" : "donere"
+        "title" : "donere",
+        "heading1" : "HJELP OSS Å GJØRE EN FORSKJELL",
+        "paymentserviceTitle" : "Donasjoner",
+        "description1" : "Den 4. mars 2022 ankom vi Medyka (Polen) for å gi humanitær hjelp til flyktninger fra Ucraine-konflikten. Med støtte fra personell i Lviv og andre steder i Ukraina hjelper vi med logistikk av mat, powerbanks og sanitærprodukter. Paracrew opererer ved grensen både i Medyka (Polen) og Szeginie (Ukraina)",
+        "description2":{
+            "phase2" : "Fase II",
+            "phase2_1" : "Fase II/I",
+            "para1" : "Vi er i fase II av operasjonen vår i Medyka",
+            "para2" : "Etabler system for å levere nødvendige livsopprettholdende varer over Ukrainas grense. Dette gjøres gjennom daglig innkjøpsvirksomhet i Polen og transport til Ukraina. Vi driver 2 telt med stoler, bord, varmeovn, tepper osv. Flyktninger som passerer gjennom casn lader mobilen, spiser, drikker og får sanitærprodukter før de fortsetter reisen.",
+            "para3" : "Vi skal renovere et bygg for å fortsette å gi hjelp til de mest utsatte. Vi tar sikte på å ha ledige senger i denne fasen. Vi er forberedt på å komme oss inn og ut av Ukraina for å hjelpe til med oppryddingen. Vi har noe utstyr, men vi setter pris på all hjelpen vi får for å fortsette å støtte mennesker i denne krisen. Hvis din bedrift kan hjelpe, vennligst gi oss beskjed"
+        }
     }
 }

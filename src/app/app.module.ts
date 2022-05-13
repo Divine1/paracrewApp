@@ -27,6 +27,10 @@ import { DonateComponent } from './pages/donate/donate.component';
 import { NzSelectModule } from 'ng-zorro-antd/select';
 import { NzModalModule } from 'ng-zorro-antd/modal';
 
+import { NzTableModule } from 'ng-zorro-antd/table';
+import { DonationmetricsComponent } from './pages/donate/donationmetrics/donationmetrics.component';
+
+
 registerLocaleData(en);
 
 
@@ -47,6 +51,7 @@ function rootLoaderFactory(http:HttpClient){
     ContributorsComponent,
     ContributorsliderComponent,
     DonateComponent,
+    DonationmetricsComponent
   ],
   imports: [
     HttpClientModule,
@@ -75,10 +80,10 @@ function rootLoaderFactory(http:HttpClient){
     FormsModule,
     NbTooltipModule,
     NzSelectModule,
-    NbDialogModule,
+    NbDialogModule.forRoot(),
     NzModalModule,
-    ReactiveFormsModule
-    
+    ReactiveFormsModule,
+    NzTableModule
   ],
   providers: [{ provide: NZ_I18N, useValue: en_US }],
   bootstrap: [AppComponent]

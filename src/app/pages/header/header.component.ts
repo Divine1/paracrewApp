@@ -21,11 +21,20 @@ export class HeaderComponent implements OnInit {
     {code:"no",title:"Norway (NO)",style:"basic"},
     {code:"ua",title:"Ukraine (UA)",style:"basic"}
   ];
-  selectedLanguage = 'en';
+  selectedLanguage:string;
 
   ngOnInit(): void {
+    
   }
-  constructor(private translateConfigService : TranslateConfigService) { }
+  constructor(private translateConfigService : TranslateConfigService) {
+    let chosenLanguage = localStorage.getItem("chosenLanguage");
+    if(chosenLanguage){
+      this.selectedLanguage = chosenLanguage;
+    }
+    else{
+      this.selectedLanguage = 'en';
+    }
+   }
   changeLanguage(type: string){
     console.log("changeLanguage type ",type)
     this.selectedLanguage = type;

@@ -5,7 +5,7 @@
         justify-content: center;
         align-items: center;
         >div{
-            margin: 1.5rem;
+            margin: 1rem;
             img{
                 height: 7rem;
                 width: auto;
@@ -14,11 +14,42 @@
                 height: 12rem;
             }
             .VIPPS{
-                height: 15rem;
+                height: 7rem;
             }
             .paypal{
                 height: 5rem;
             }
         }
+    }
+}
+.dialogclass{
+    .dialogheader{
+        display: flex;
+        justify-content: center;
+        img{
+            width: auto;
+            height: 3rem;
+        }
+    }
+}
+.effortsofthecrew{
+    display: flex;
+    // width: 70vw;
+    justify-content: center;
+    // align-items: center;
+    flex-wrap: wrap;
+    .effortleft{
+        
+        img{
+            height: 40rem;
+            width: auto;
+        }
+        margin-right: 2rem;
+        margin-bottom: 2rem;
+    }
+    .effortright{
+
+        width: 15rem;
+        
     }
 }

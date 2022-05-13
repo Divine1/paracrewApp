@@ -9,6 +9,9 @@ const routes: Routes = [
   },
   {
     path : "donate",component : DonateComponent,pathMatch: 'full'
+  },
+  {
+    path : "**",redirectTo : ''
   }
 ];
 

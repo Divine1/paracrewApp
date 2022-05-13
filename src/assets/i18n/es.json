@@ -23,7 +23,20 @@
     "about":{
         "title"  : "Acerca de"
     },
+    "ourteam" : {
+        "title" : "Nuestro equipo"
+    },
     "donate" : {
-        "title" : "donar"
+        "title" : "donar",
+        "heading1" : "AYÚDANOS A MARCAR LA DIFERENCIA",
+        "paymentserviceTitle" : "Donaciones",
+        "description1" : "El 4 de marzo de 2022 llegamos a Medyka (Polonia) para dar ayuda humanitaria a los refugiados del conflicto de Ucrania. Con el apoyo del personal en Lviv y otros lugares dentro de Ucrania ayudamos con la logística de alimentos, powerbanks y productos sanitarios. Paracrew opera en la frontera tanto en Medyka (Polonia) como en Szeginie (Ucrania)",
+        "description2":{
+            "phase2" : "Fase II",
+            "phase2_1" : "Fase II/I",
+            "para1" : "Estamos en la fase II de nuestra operación en Medyka",
+            "para2" : "Establecer un sistema para la entrega de los bienes de soporte vital necesarios a través de la frontera de Ucrania. Esto se hace a través de operaciones de compra diarias en Polonia y transporte a Ucrania. Operamos 2 tiendas de campaña con sillas, mesas, calentador, mantas, etc. Los refugiados que pasan por Casn pueden cargar sus teléfonos móviles, comer, beber y obtener productos sanitarios antes de continuar su viaje.",
+            "para3" : "Rehabilitaremos un edificio para seguir dando ayuda a los más vulnerables. Nuestro objetivo es tener camas disponibles durante esta fase. Estamos preparados para entrar y salir de Ucrania para ayudar con la limpieza. Tenemos algunos equipos pero agradecemos toda la ayuda que recibimos para seguir apoyando a las personas en esta crisis. Si su empresa puede ayudar, por favor háganoslo saber."
+        }
     }
 }
