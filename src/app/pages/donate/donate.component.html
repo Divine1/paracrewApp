@@ -4,8 +4,9 @@
             <img [src]="item.image" alt="" [class]="item.classname" />
         </a>
 
-        <div *ngIf="item.type == 'popup'" (click)="showModal(item)">
+        <div *ngIf="item.type == 'popup'" (click)="openDialog(item)">
             <img [src]="item.image" alt="" [class]="item.classname" />
         </div>
     </div>
 </div>
+

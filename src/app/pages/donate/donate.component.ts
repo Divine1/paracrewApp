@@ -7,7 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DonateComponent implements OnInit {
   isVisible = false;
-
   constructor() {
   }
 
@@ -47,14 +46,7 @@ export class DonateComponent implements OnInit {
     },
   ]
 
-  showModal(item:any): void {
-    this.isVisible = true;
+  openDialog(item:any){
+
   }
-
-  handleClose(): void {
-    console.log('Button ok clicked!');
-    this.isVisible = false;
-  }
-
-
 }

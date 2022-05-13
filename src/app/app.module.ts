@@ -18,7 +18,7 @@ import { NZ_I18N } from 'ng-zorro-antd/i18n';
 import { en_US } from 'ng-zorro-antd/i18n';
 import { registerLocaleData } from '@angular/common';
 import en from '@angular/common/locales/en';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CarousalComponent } from './pages/carousal/carousal.component';
 import { NzCarouselModule , } from 'ng-zorro-antd/carousel';
 import { ContributorsComponent } from './pages/contributors/contributors.component';
@@ -76,7 +76,9 @@ function rootLoaderFactory(http:HttpClient){
     NbTooltipModule,
     NzSelectModule,
     NbDialogModule,
-    NzModalModule
+    NzModalModule,
+    ReactiveFormsModule
+    
   ],
   providers: [{ provide: NZ_I18N, useValue: en_US }],
   bootstrap: [AppComponent]
