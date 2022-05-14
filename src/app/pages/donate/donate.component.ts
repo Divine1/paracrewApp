@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { NbDialogService } from '@nebular/theme';
+
 
 
 @Component({
@@ -9,10 +9,8 @@ import { NbDialogService } from '@nebular/theme';
 })
 export class DonateComponent implements OnInit {
 
-  @ViewChild('dialog')
-  dialog:any;
-  data:any="my sea data"
-  constructor(private dialogService: NbDialogService) {
+  data:any;
+  constructor() {
   }
 
   ngOnInit(): void {
@@ -58,12 +56,14 @@ export class DonateComponent implements OnInit {
 
   openDialog(item:any){
     console.log("openDialog item ",item)
+    /*
     this.dialogService.open(this.dialog, {
       context: {
         title: 'This is a title passed to the dialog component',
         ...item
       },
     });
+    */
   }
 
 

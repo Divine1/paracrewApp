@@ -22,8 +22,9 @@
         //     margin-bottom: 2rem;
         // }
         .newsletter{
-            width: 30%;
+            width: 100%;
             min-width: 15rem;
+            max-width: 30rem;
             margin-right: 2rem;
         }
         .about-title{
@@ -81,3 +82,25 @@
         }
     }
   }
+
+  .registerbutton{
+    border:none;
+    padding:0.5rem;
+    border-radius: 0.5rem;
+    color:rgb(105, 104, 104);
+
+    &:hover{
+        background-color: rgb(245, 187, 40);
+        color: white;
+    }
+
+    
+  }
+  .registeremail{
+    outline: none;
+    border: none;
+    background-color: #efefef;
+    padding: 0.5rem;
+    width: 14rem;
+    border-radius: 0.5rem;
+    }

@@ -11,24 +11,19 @@ import { HeaderComponent } from './pages/header/header.component';
 import { FooterComponent } from './pages/footer/footer.component';
 import { ElementSliderComponent } from './pages/element-slider/element-slider.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NbThemeModule, NbLayoutModule, NbButtonModule, NbCardModule, NbBadgeModule, NbIconModule, NbInputModule, NbFormFieldModule, NbSelectLabelComponent, NbSelectModule, NbUserModule, NbTooltipModule, NbDialogModule } from '@nebular/theme';
-import { NbEvaIconsModule } from '@nebular/eva-icons';
+
 import { FloatingbarComponent } from './pages/floatingbar/floatingbar.component';
-import { NZ_I18N } from 'ng-zorro-antd/i18n';
-import { en_US } from 'ng-zorro-antd/i18n';
 import { registerLocaleData } from '@angular/common';
 import en from '@angular/common/locales/en';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 import { CarousalComponent } from './pages/carousal/carousal.component';
-import { NzCarouselModule , } from 'ng-zorro-antd/carousel';
+import { NzCarouselModule } from 'ng-zorro-antd/carousel';
 import { ContributorsComponent } from './pages/contributors/contributors.component';
 import { ContributorsliderComponent } from './pages/contributorslider/contributorslider.component';
 import { DonateComponent } from './pages/donate/donate.component';
 import { NzSelectModule } from 'ng-zorro-antd/select';
-import { NzModalModule } from 'ng-zorro-antd/modal';
-
-import { NzTableModule } from 'ng-zorro-antd/table';
 import { DonationmetricsComponent } from './pages/donate/donationmetrics/donationmetrics.component';
+import { ParacardComponent } from './pages/paracard/paracard.component';
 
 
 registerLocaleData(en);
@@ -51,7 +46,8 @@ function rootLoaderFactory(http:HttpClient){
     ContributorsComponent,
     ContributorsliderComponent,
     DonateComponent,
-    DonationmetricsComponent
+    DonationmetricsComponent,
+    ParacardComponent
   ],
   imports: [
     HttpClientModule,
@@ -65,27 +61,11 @@ function rootLoaderFactory(http:HttpClient){
       }
     }),
     BrowserAnimationsModule,
-    NbThemeModule.forRoot({ name: 'default' }),
-    NbLayoutModule,
-    NbEvaIconsModule,
-    NbButtonModule,
-    NbCardModule,
-    NbEvaIconsModule,
-    NbIconModule,
-    NbInputModule,
-    NbFormFieldModule,
     NzCarouselModule,
-    NbSelectModule,
-    NbUserModule,
     FormsModule,
-    NbTooltipModule,
-    NzSelectModule,
-    NbDialogModule.forRoot(),
-    NzModalModule,
-    ReactiveFormsModule,
-    NzTableModule
+    NzSelectModule
   ],
-  providers: [{ provide: NZ_I18N, useValue: en_US }],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

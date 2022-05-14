@@ -1,10 +1,4 @@
-@import 'themes';
 
-@import '~@nebular/theme/styles/globals';
-
-@include nb-install() {
-  @include nb-theme-global();
-};
 /* You can add global styles to this file, and also import other style files */
 *{
     margin: 0;
@@ -21,13 +15,3 @@ body{
 //   height: unset;
 // }
 
-
-.nb-theme-default nb-layout-header nav {
-  height: unset;
-}
-.nb-theme-default nb-layout-header nav{
-  box-shadow:unset;
-}
-.nb-theme-default nb-layout .layout .layout-container .content nb-layout-footer nav{
-  border-top: unset;
-}
