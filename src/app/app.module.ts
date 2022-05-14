@@ -10,7 +10,7 @@ import { SupportComponent } from './pages/support/support.component';
 import { HeaderComponent } from './pages/header/header.component';
 import { FooterComponent } from './pages/footer/footer.component';
 import { ElementSliderComponent } from './pages/element-slider/element-slider.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+//import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { FloatingbarComponent } from './pages/floatingbar/floatingbar.component';
 import { registerLocaleData } from '@angular/common';
@@ -62,7 +62,6 @@ function rootLoaderFactory(http:HttpClient){
         deps: [HttpClient]
       }
     }),
-    BrowserAnimationsModule,
     NzCarouselModule,
     FormsModule,
     NzSelectModule
