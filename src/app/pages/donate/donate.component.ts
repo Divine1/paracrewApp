@@ -54,7 +54,7 @@ export class DonateComponent implements OnInit {
     },
   ]
 
-  openDialog(item:any){
+  openParapopup(item:any){
     console.log("openDialog item ",item)
     /*
     this.dialogService.open(this.dialog, {
@@ -65,6 +65,8 @@ export class DonateComponent implements OnInit {
     });
     */
   }
+  closeParapopup(){
 
+  }
 
 }

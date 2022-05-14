@@ -29,7 +29,7 @@
             <img [src]="item.image" alt="" [class]="item.classname" />
         </a>
 
-        <div *ngIf="item.type == 'popup'" (click)="openDialog(item)">
+        <div *ngIf="item.type == 'popup'" (click)="openParapopup(item)">
             <img [src]="item.image" alt="" [class]="item.classname" />
         </div>
     </div>
@@ -65,55 +65,40 @@
     </div>
 </div>
 
-
-<ng-template #dialog let-data let-ref="dialogRef" >
-    <div class="dialogclass">
-      <div>
-          <div class="dialogheader">
-            <img [src]="data.image" alt="" class="" />
-          </div>
-          
-      </div>
-<!--       
-      <div>
-        
-        <div *ngIf="data.classname == 'VIPPS'">
-            <div style="text-align: center;color: #f15d2b;font-size: 1.3rem;">
-                {{data.paymentcode}}
+<app-parapopup>
+    <div class="dialogclass" >
+        <div>
+            <div class="dialogheader">
+                <img [src]="data.image" alt="" class="" />
             </div>
-            <img [src]="data.qrcode" alt="" style="height: 20rem;">
-        </div>  
-
-        <div *ngIf="data.classname == 'paypal'">
-            <div style="text-align: center;color: #f15d2b;font-size: 1rem;margin-bottom: 1rem;">
-                <a style="text-decoration: none;" [href]="data.paymentlink" target="_blank">Pay using paypal website</a>
-            </div>
-            <img [src]="data.qrcode" alt="" style="height: 20rem;">
-        </div>  
-
-        <div *ngIf="data.classname == 'dnb'">
-            
+        </div>
+        <div>
+            <div *ngIf="data.classname == 'VIPPS'">
+                <div style="text-align: center;color: #f15d2b;font-size: 1.3rem;">
+                    {{data.paymentcode}}
+                </div>
+                <img [src]="data.qrcode" alt="" style="height: 20rem;">
+            </div>  
+            <div *ngIf="data.classname == 'paypal'">
+                <div style="text-align: center;color: #f15d2b;font-size: 1rem;margin-bottom: 1rem;">
+                    <a style="text-decoration: none;" [href]="data.paymentlink" target="_blank">Pay using paypal website</a>
+                </div>
+                <img [src]="data.qrcode" alt="" style="height: 20rem;">
+            </div>  
+            <div *ngIf="data.classname == 'dnb'">
                 <div style="font-weight: bold;font-size: 1.2rem;text-align: center;margin-bottom: 0.6rem;" translate>bankingdetails.title</div>
-                
-                <div>
-                    Account owner: Paracrew</div>
-                <div>
-                    Bank account: 1506.78.01455</div>
-                <div>
-                    IBAN: NO2215067801455</div>
-                <div>
-                    BIC: DNBANOKKXXX</div>
-            
+                <div>Account owner: Paracrew</div>
+                <div>Bank account: 1506.78.01455</div>
+                <div>IBAN: NO2215067801455</div>
+                <div>BIC: DNBANOKKXXX</div>
+            </div>
         </div>
-
-
-
-      </div>
-      <div>
-        <div style="text-align: center;">
-            <button (click)="ref.close()">Close</button>
-        </div>
-      </div> -->
-
+        <div>
+            <div style="text-align: center;">
+                <button (click)="closeParapopup()">Close</button>
+            </div>
+        </div> 
     </div>
-  </ng-template>
+</app-parapopup>
+
+ 

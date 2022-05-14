@@ -24,6 +24,7 @@ import { DonateComponent } from './pages/donate/donate.component';
 import { NzSelectModule } from 'ng-zorro-antd/select';
 import { DonationmetricsComponent } from './pages/donate/donationmetrics/donationmetrics.component';
 import { ParacardComponent } from './pages/paracard/paracard.component';
+import { ParapopupComponent } from './pages/parapopup/parapopup.component';
 
 
 registerLocaleData(en);
@@ -47,7 +48,8 @@ function rootLoaderFactory(http:HttpClient){
     ContributorsliderComponent,
     DonateComponent,
     DonationmetricsComponent,
-    ParacardComponent
+    ParacardComponent,
+    ParapopupComponent
   ],
   imports: [
     HttpClientModule,
