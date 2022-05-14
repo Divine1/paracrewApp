@@ -8,8 +8,8 @@ import { Component, OnInit, ViewChild } from '@angular/core';
   styleUrls: ['./donate.component.scss']
 })
 export class DonateComponent implements OnInit {
-
-  data:any;
+  togglePopup:boolean=false;
+  chosenItemForpopup:any=null
   constructor() {
   }
 
@@ -56,6 +56,8 @@ export class DonateComponent implements OnInit {
 
   openParapopup(item:any){
     console.log("openDialog item ",item)
+    this.togglePopup = true;
+    this.chosenItemForpopup = item;
     /*
     this.dialogService.open(this.dialog, {
       context: {
@@ -66,7 +68,8 @@ export class DonateComponent implements OnInit {
     */
   }
   closeParapopup(){
-
+    this.togglePopup = false;
+    this.chosenItemForpopup = null;
   }
 
 }

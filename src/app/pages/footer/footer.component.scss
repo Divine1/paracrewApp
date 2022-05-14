@@ -82,19 +82,17 @@
         }
     }
   }
-
+  @media screen and (max-width: 380px) {
+    .registerbutton{
+        margin-top: 0.5rem;
+    }
+  }
   .registerbutton{
     border:none;
     padding:0.5rem;
     border-radius: 0.5rem;
-    color:rgb(105, 104, 104);
-
-    &:hover{
-        background-color: rgb(245, 187, 40);
-        color: white;
-    }
-
-    
+    color:white;
+    background-color: rgb(87, 87, 236);
   }
   .registeremail{
     outline: none;

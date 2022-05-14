@@ -1,21 +1,4 @@
-
-
-
-.donate{
-    margin: 4rem 0;
-    text-align: center;
-    
-    
-    img{
-        height: 15rem;    
-    }
+:host{
+    background-color: blue;
 }
 
-@media screen and (max-width: 900px) {
-    
-        .donate{
-            img{
-                height: 10rem;    
-            }
-        }
-    }

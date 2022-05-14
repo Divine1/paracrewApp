@@ -1,4 +1,6 @@
 :host{
+    display: block;
+    
     .donationcompanies{
         display: flex;
         flex-wrap: wrap;
@@ -52,4 +54,10 @@
         width: 15rem;
         
     }
+}
+.closepopup{
+    border: none;
+    padding: 0.3rem 0.7rem;
+    border-radius: 0.8rem;
+    color: #726f6f;
 }

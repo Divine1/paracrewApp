@@ -1,21 +1,14 @@
 .paracarousal{
-  //height: 45rem;
-  //min-height: 30rem;
   height: 70vh;
    width: auto;
   [nz-carousel-content] {
-    
-    // background: #364d79;
     color: #fff;
-
-   height: auto;
+    height: auto;
     width: 100%;
-   img{
-    height: 100%;
-    width: 100%;
-    object-fit: contain;
-  }
-   
-  }
-  
+    img{
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+    }
+  } 
 }

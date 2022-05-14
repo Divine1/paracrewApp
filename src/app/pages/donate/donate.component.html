@@ -1,4 +1,4 @@
-<div style="font-size: 2rem;text-align: center;line-height: 1;" translate>
+<div style="font-size: 1.7rem;text-align: center;line-height: 1;margin-bottom: 1rem;" translate>
     donate.heading1
 </div>
 
@@ -58,35 +58,39 @@
 
 <div style="margin: 0 2rem" >
     <div style="width: auto;text-align: center;object-fit: contain;">
-        <img style="width: 100%;" src="assets/images/donation/rescueteam1.jpeg" alt="">
+        <img style="width: auto;" src="assets/images/donation/rescueteam1.jpeg" alt="">
     </div>
     <div style="width:auto;text-align: center;object-fit: contain;">
-        <img style="width: 100%;" src="assets/images/donation/rescueteam2.jpeg" alt="">
+        <img style="width: auto;" src="assets/images/donation/rescueteam2.jpeg" alt="">
     </div>
 </div>
 
-<app-parapopup>
+<app-parapopup *ngIf="togglePopup">
     <div class="dialogclass" >
         <div>
             <div class="dialogheader">
-                <img [src]="data.image" alt="" class="" />
+                <img [src]="chosenItemForpopup.image" alt="" class="" />
             </div>
         </div>
-        <div>
-            <div *ngIf="data.classname == 'VIPPS'">
+        <div style="margin-top: 1rem;">
+            <div *ngIf="chosenItemForpopup.classname == 'VIPPS'">
                 <div style="text-align: center;color: #f15d2b;font-size: 1.3rem;">
-                    {{data.paymentcode}}
+                    {{chosenItemForpopup.paymentcode}}
                 </div>
-                <img [src]="data.qrcode" alt="" style="height: 20rem;">
+                <div style="text-align: center;">
+                    <img [src]="chosenItemForpopup.qrcode" alt="" style="height: 20rem;">
+                </div>
             </div>  
-            <div *ngIf="data.classname == 'paypal'">
+            <div *ngIf="chosenItemForpopup.classname == 'paypal'">
                 <div style="text-align: center;color: #f15d2b;font-size: 1rem;margin-bottom: 1rem;">
-                    <a style="text-decoration: none;" [href]="data.paymentlink" target="_blank">Pay using paypal website</a>
+                    <a style="text-decoration: none;" [href]="chosenItemForpopup.paymentlink" target="_blank">Pay using paypal website</a>
                 </div>
-                <img [src]="data.qrcode" alt="" style="height: 20rem;">
+                <div style="text-align: center;">
+                    <img [src]="chosenItemForpopup.qrcode" alt="" style="min-height:6rem; max-height: 15rem;height: 100%;width: auto;">
+                </div>
             </div>  
-            <div *ngIf="data.classname == 'dnb'">
-                <div style="font-weight: bold;font-size: 1.2rem;text-align: center;margin-bottom: 0.6rem;" translate>bankingdetails.title</div>
+            <div *ngIf="chosenItemForpopup.classname == 'dnb'">
+                <div style="font-size: 1.2rem;margin-bottom: 0.6rem;" translate>bankingdetails.title</div>
                 <div>Account owner: Paracrew</div>
                 <div>Bank account: 1506.78.01455</div>
                 <div>IBAN: NO2215067801455</div>
@@ -94,8 +98,10 @@
             </div>
         </div>
         <div>
-            <div style="text-align: center;">
-                <button (click)="closeParapopup()">Close</button>
+            <div style="text-align: center;margin-top: 2rem;">
+                <button  class="closepopup"
+                
+                (click)="closeParapopup()">Close</button>
             </div>
         </div> 
     </div>
