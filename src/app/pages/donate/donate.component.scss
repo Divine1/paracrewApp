@@ -43,7 +43,7 @@
     .effortleft{
         
         img{
-            height: 40rem;
+            height: 30rem;
             width: auto;
         }
         margin-right: 2rem;
@@ -60,4 +60,10 @@
     padding: 0.3rem 0.7rem;
     border-radius: 0.8rem;
     color: #726f6f;
+}
+.qrcodeimage{
+    min-height:6rem; 
+    max-height: 15rem;
+    height: 100%;
+    width: auto;
 }

@@ -38,7 +38,7 @@
 
 <div class="effortsofthecrew">
 
-    <div class="effortleft" style="margin: 0 auto;">
+    <div class="effortleft" >
         <img src="assets/images/donation/rescueteam3.jpeg" alt="">
     </div>
     <div class="effortright">
@@ -56,11 +56,11 @@
     </div>
 </div>
 
-<div style="margin: 0 2rem" >
-    <div style="width: 100%;text-align: center;">
+<div style="display: flex;flex-direction: column;align-items: center;" >
+    <div style="width: 100%;max-width:40rem; text-align: center;">
         <img style="width: inherit;object-fit: contain;" src="assets/images/donation/rescueteam1.jpeg" alt="">
     </div>
-    <div style="width:100%;text-align: center;">
+    <div style="width:100%;max-width:40rem;text-align: center;">
         <img style="width: inherit;object-fit: contain;" src="assets/images/donation/rescueteam2.jpeg" alt="">
     </div>
 </div>
@@ -78,7 +78,7 @@
                     {{chosenItemForpopup.paymentcode}}
                 </div>
                 <div style="text-align: center;">
-                    <img [src]="chosenItemForpopup.qrcode" alt="" style="height: 20rem;">
+                    <img class="qrcodeimage" [src]="chosenItemForpopup.qrcode" alt="" />
                 </div>
             </div>  
             <div *ngIf="chosenItemForpopup.classname == 'paypal'">
@@ -86,7 +86,7 @@
                     <a style="text-decoration: none;" [href]="chosenItemForpopup.paymentlink" target="_blank">Pay using paypal website</a>
                 </div>
                 <div style="text-align: center;">
-                    <img [src]="chosenItemForpopup.qrcode" alt="" style="min-height:6rem; max-height: 15rem;height: 100%;width: auto;">
+                    <img class="qrcodeimage" [src]="chosenItemForpopup.qrcode" alt="" />
                 </div>
             </div>  
             <div *ngIf="chosenItemForpopup.classname == 'dnb'">

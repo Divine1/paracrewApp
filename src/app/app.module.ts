@@ -10,7 +10,7 @@ import { SupportComponent } from './pages/support/support.component';
 import { HeaderComponent } from './pages/header/header.component';
 import { FooterComponent } from './pages/footer/footer.component';
 import { ElementSliderComponent } from './pages/element-slider/element-slider.component';
-//import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { FloatingbarComponent } from './pages/floatingbar/floatingbar.component';
 import { registerLocaleData } from '@angular/common';
@@ -21,7 +21,6 @@ import { NzCarouselModule } from 'ng-zorro-antd/carousel';
 import { ContributorsComponent } from './pages/contributors/contributors.component';
 import { ContributorsliderComponent } from './pages/contributorslider/contributorslider.component';
 import { DonateComponent } from './pages/donate/donate.component';
-import { NzSelectModule } from 'ng-zorro-antd/select';
 import { DonationmetricsComponent } from './pages/donate/donationmetrics/donationmetrics.component';
 import { ParacardComponent } from './pages/paracard/paracard.component';
 import { ParapopupComponent } from './pages/parapopup/parapopup.component';
@@ -64,7 +63,7 @@ function rootLoaderFactory(http:HttpClient){
     }),
     NzCarouselModule,
     FormsModule,
-    NzSelectModule
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

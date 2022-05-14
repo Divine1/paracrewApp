@@ -4,6 +4,7 @@
     z-index: 1000;
     background-color: white;
     width: 100%;
+    
     .headercomponent{
         width: auto;
         .logo{
@@ -18,12 +19,15 @@
         .locales{
             display: flex;
             justify-content: center;
+            align-items: center;
             .pmenu{
                 display: flex;
                 align-items: center;
+                justify-content: center;
                 div{
                     margin: 0 0.5rem;
                     cursor: pointer;
+                    font-size: 1.1rem;
                 }
             }
             button{
@@ -31,6 +35,27 @@
                 margin-top: 0.3rem;
             }
         }
+
+        @media only screen and (max-width: 500px) {
+            .locales{
+                .pmenu{
+                    div{
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+        }
+        @media only screen and (max-device-width: 500px) {
+            .locales{
+                .pmenu{
+                    div{
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+        }
+        margin-bottom: 1.5rem;
+
     }
     .menuactive{
         color: lightseagreen;
@@ -38,3 +63,4 @@
 
     }    
 }
+

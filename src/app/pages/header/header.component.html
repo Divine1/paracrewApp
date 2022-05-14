@@ -8,10 +8,12 @@
         <div routerLink="" [routerLinkActiveOptions]="{exact: true}" routerLinkActive="menuactive" translate>home.title</div>
         <div routerLink="donate" [routerLinkActiveOptions]="{exact: true}" routerLinkActive="menuactive" translate>donate.title</div>
       </div>
-      <div>
-          <nz-select [ngModel]="selectedLanguage" (ngModelChange)="changeLanguage($event)">
-            <nz-option *ngFor="let item of languages" [nzValue]="item.code" [nzLabel]="item.title"></nz-option> 
-          </nz-select>
+      <div style="position: relative;">
+          <select [ngModel]="selectedLanguage" (change)= "changeLanguage($event)">
+            <option [value]="item.code" *ngFor="let item of languages">
+              {{item.title}}
+            </option>
+          </select>
         </div>
     </div>
 </div>

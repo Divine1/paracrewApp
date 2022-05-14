@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { TranslateConfigService } from 'src/app/services/translate-config.service';
 
 interface ILanguage{
@@ -13,8 +13,6 @@ interface ILanguage{
 })
 export class HeaderComponent implements OnInit {
 
-  languageStatus:string='basic';
-
   languages:ILanguage[]=[
     {code:"en",title:"English (EN)",style:"success"},
     {code:"es",title:"Spanish (ES)",style:"basic"},
@@ -27,6 +25,7 @@ export class HeaderComponent implements OnInit {
     
   }
   constructor(private translateConfigService : TranslateConfigService) {
+    
     let chosenLanguage = localStorage.getItem("chosenLanguage");
     if(chosenLanguage){
       this.selectedLanguage = chosenLanguage;
@@ -35,23 +34,11 @@ export class HeaderComponent implements OnInit {
       this.selectedLanguage = 'en';
     }
    }
-  changeLanguage(type: string){
+
+  changeLanguage(event: any){
+    let type = event.target.value;
     console.log("changeLanguage type ",type)
     this.selectedLanguage = type;
-    // this.languages = this.languages.map((item)=>{
-    //   if(type == item.code){
-    //     return {
-    //       ...item,
-    //       style : "success"
-    //     }
-    //   }
-    //   else{
-    //     return {
-    //       ...item,
-    //       style : "basic"
-    //     };
-    //   }
-    // });
-    this.translateConfigService.changeLanguage(type);
+   this.translateConfigService.changeLanguage(type);
   }
 }
