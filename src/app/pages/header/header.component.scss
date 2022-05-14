@@ -1,40 +1,31 @@
 :host{
     display: block;
     position: fixed;
-    width: 100%;
-    
     z-index: 1000;
     background-color: white;
-    
+    width: 100%;
     .headercomponent{
-        
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
+        width: auto;
         .logo{
-            display: flex;
-            justify-content: center;
-            width: 18rem;
+            margin: 0 auto;
+            width: 20rem;
+            
             img{
                 width: inherit;
             }
         }
-        .pmenu{
-            display: flex;
-            
-            align-items: center;
-            div{
-                margin: 0 0.5rem;
-                cursor: pointer;
-                
-            }
-        }
+        
         .locales{
-            justify-content: center;
             display: flex;
-            
+            justify-content: center;
+            .pmenu{
+                display: flex;
+                align-items: center;
+                div{
+                    margin: 0 0.5rem;
+                    cursor: pointer;
+                }
+            }
             button{
                 margin-right: 0.5rem;
                 margin-top: 0.3rem;
